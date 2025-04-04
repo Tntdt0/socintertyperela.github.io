@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IntypeRelaCal</title>
+    <style>
+        body {
+            background-color: #000000;
+        }
+        /*帮助文本参数*/
+            p.help{
+            text-align:right;
+            font-size: 15px;
+            color: #ff9f0a;
+        }
+        a {
+            text-align:right;
+            font-size: 15px;
+            color: #ff9f0a;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        /*标题文本参数*/
+        h1 {
+            text-align:center;
+            color: #ff9f0a;
+        }
+        /*soc类型文本参数*/
+        #type_Que {
+            text-align:justify;
+            font-size: 30px;
+            color: #ffffff;
+        }
+        /*类间关系文本参数*/
+        #relation {
+            text-align:justify;
+            font-size: 24px;
+            color: #ff9f0a;
+        }
+        /*结果参数*/
+        #type_Ans {
+            text-align:justify;
+            font-size: 60px;
+            color: #ffffff;
+        }
+        /************************************/
+        /*类间关系键参数*/
+        .button {
+            background-color: #333333; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: #737373;
+            color: #ffffff;
+        }
+        /*类型键参数*/
+        .buttonA {
+            background-color: #a5a5a5; 
+            border: none;
+            color: #000000;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .buttonA:hover{
+            background-color: #ffffff;
+            color: #000000;
+        }
+        /*计算键参数*/
+        .buttonB{
+            background-color: #ff9f0a;
+            border: none;
+            color: #ffffff;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .buttonB:hover{
+            background-color: #ffffff;
+            color: #ff9f0a;
+        }
+         /*C键参数*/
+        .buttonC{
+            background-color: #e95151;
+            border: none;
+            color: #ffffff;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .buttonC:hover{
+            background-color: #ffffff;
+            color: #e95151;
+        }
+         /*AC键参数*/
+        .buttonD{
+            background-color: #e30f0f;
+            border: none;
+            color: #ffffff;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .buttonD:hover{
+            background-color: #ffffff;
+            color: #e30f0f;
+        }
+
+    </style>
+</head>
+<body>
+    <p class = "help">遇到问题？<a href = "https://www.zhihu.com/people/63-53-5-88">联系我</a></p>
+    <h1>类间关系计算器</h1>
+    <p id="type_Que">|</p>
+    <p id="relation"></p>
+    <p id="type_Ans"></p>
+
+    <button class = "button button1" onclick="Click_Duiou()">对偶</button>
+    <button class = "button button2" onclick="Click_Jingxiang()">镜像</button>
+    <button class = "button button3" onclick="Click_Jihuo()">激活</button>
+    <button class = "button button4" onclick="Click_Xiangdeng()">相等</button>
+
+    <button class = "button button5" onclick="Click_Banduiou()">半对偶</button>
+    <button class = "button button6" onclick="Click_Qinzu()">亲族</button>
+    <button class = "button button7" onclick="Click_Yuedengyu()">约等于</button>
+    <button class = "button button8" onclick="Click_Hezuo()">合作</button>
+
+    <button class = "button button9" onclick="Click_Huanxiang()">幻想</button>
+    <button class = "button button10" onclick="Click_Xiaoshi()">消失</button>
+    <button class = "button button11" onclick="Click_Chaowo()">超我</button>
+    <button class = "button button12" onclick="Click_Chongtu()">冲突</button>
+
+    <button class = "button button13" onclick="Click_Youyi()">有益</button>
+    <button class = "button button14" onclick="Click_Shouyi()">受益</button>
+    <button class = "button button15" onclick="Click_Jiandu()">监督</button>
+    <button class = "button button16" onclick="Click_Shoujiandu()">受监督</button>
+    <br>
+    <button class = "buttonA button1" onclick="Click_LII()">LII</button>
+    <button class = "buttonA button1" onclick="Click_ESE()">ESE</button>
+    <button class = "buttonA button1" onclick="Click_ILE()">ILE</button>
+    <button class = "buttonA button1" onclick="Click_SEI()">SEI</button>
+    
+    <button class = "buttonA button1" onclick="Click_IEI()">IEI</button>
+    <button class = "buttonA button1" onclick="Click_SLE()">SLE</button>
+    <button class = "buttonA button1" onclick="Click_EIE()">EIE</button>
+    <button class = "buttonA button1" onclick="Click_LSI()">LSI</button>
+    
+    <button class = "buttonA button1" onclick="Click_ILI()">ILI</button>
+    <button class = "buttonA button1" onclick="Click_SEE()">SEE</button>
+    <button class = "buttonA button1" onclick="Click_LIE()">LIE</button>
+    <button class = "buttonA button1" onclick="Click_ESI()">ESI</button>
+    
+    <button class = "buttonA button1" onclick="Click_EII()">EII</button>
+    <button class = "buttonA button1" onclick="Click_LSE()">LSE</button>
+    <button class = "buttonA button1" onclick="Click_IEE()">IEE</button>
+    <button class = "buttonA button1" onclick="Click_SLI()">SLI</button>
+    <br>
+
+    <button class = "buttonC button0" onclick="Click_ClearLast()">C</button>
+    <button class = "buttonD button0" onclick="Click_ClearAll()">AC</button>
+
+    <button class = "buttonB button0" onclick="Click_Jisuan()">计算</button>
+    
+    
+
+    <script src="soc.js">
+    </script>
+</body>
+</html>
